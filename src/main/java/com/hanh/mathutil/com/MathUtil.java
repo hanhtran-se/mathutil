@@ -14,17 +14,24 @@ public class MathUtil {
     // 0, 20 -> boudary value - biên giới cua tập giá trị
     //          sích qua 1 síu là sang vùng invalid boundary
     // 0 , xích nhẹ sang trái 1 đơn vị, ko ổn, ko tính đc, -1 sao tính
+//
+    // viết ham theo phong cach đệ quy
+    // 5! = 1.2.3.4.5 = 4! . 5
+    // 4! = 4 . 3!
+    // 3! = 1 . 2!
+    // 2! = 2 . 1!
+    // 1! = 1
+    //  return
     public static long getFactorial(int n){
         if(n < 0 || n > 20){
             // ném ngoại lệ, kèm câuchui73i, và dừng hàm ngay, ko có value nào dc tra về
             throw new IllegalArgumentException("n must be between 0 and 20");
         }
-        // biến trung gian để tính phép nhân
-        long result = 1;
-        for (int i = 1; i <= n; i++) {
-            result *= i;    // thuật toán heo đất
-        }
+       if(n == 0 || n == 1){
+           return 1;
+       }
+        return n * getFactorial(n-1);
+    // kiem thử la code đa tối ưu - regression testing, test lại thứ đã từng test
 
-        return result;
     }
 }

@@ -15,11 +15,11 @@ class MathUtilDDTTest {
         // {5, 10, 15, 20}
         Object[][] dataSet = {  {5, 120},
                                 {6, 720},
-                                {4, 240},
+                                {4, 24},
                                 {3, 6},
                                 {2, 2},
                                 {1, 1},
-                                {0, 1}};
+                                {0, 1} };
         return dataSet;
     }
     //@Test : code khi chưa có tham số hóa
