@@ -11,6 +11,7 @@
 ### Screen - shots
 
 ![Image shows source code](https://github.com/hanhtran-se/mathutil/blob/main/imgs/DDTandTDD_Junit.png)
+[![Math Utility Project (CI included) | © 2025 by Hanh Tran](https://github.com/hanhtran-se/mathutil/actions/workflows/ci-script.yml/badge.svg)](https://github.com/hanhtran-se/mathutil/actions/workflows/ci-script.yml)
 
 #### Connect me via hanhtransdr@gmail.com
 #### &#169; 2025 Hanhtran
